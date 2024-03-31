@@ -7,6 +7,8 @@ public class Weapon : MonoBehaviour
     public float offset;
     private float time;
     public float startTime;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sound;
 
     public GameObject bullet;
     public Transform point;
@@ -23,6 +25,7 @@ public class Weapon : MonoBehaviour
             {
                 Instantiate(bullet, point.position, transform.rotation);
                 time = startTime;
+                audioSource.PlayOneShot(sound, 1f);
             }
         }
         else

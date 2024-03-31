@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Zombie
   - Blaze
+  - Skelet
+  - Arrow
+  - Traps
   layers:
   - Default
   - TransparentFX

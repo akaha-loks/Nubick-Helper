@@ -24,6 +24,11 @@ public class Bullet : MonoBehaviour
                 other.collider.GetComponent<Zombie>().TakeDamage(damage);
                 Destroy();
             }
+            if (other.collider.CompareTag("Skelet"))
+            {
+                other.collider.GetComponent<Skelet>().TakeDamage(damage);
+                Destroy();
+            }
             if (other.collider.CompareTag("Ground"))
             {
                 Destroy();

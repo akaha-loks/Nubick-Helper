@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing;
     [SerializeField]private float dashingTime = 0.2f;
     [SerializeField] private float dashingCooldown = 1f;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sound;
 
     private float movement;
     private bool _lookRight;
@@ -106,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(transform.position.y < -8f)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Restart");
         }
     }
     private void Dash()
@@ -114,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             rb.velocity = new Vector2(0, 0);
+            audioSource.PlayOneShot(sound, 1f);
             StartCoroutine(DashCoolDown());
         }
     }
