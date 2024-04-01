@@ -17,7 +17,7 @@ public class PlayerDamage : MonoBehaviour
         HP = PlayerPrefs.GetFloat("HP");
         if(HP < 0)
         {
-            SceneManager.LoadScene("Restart");
+            SceneManager.LoadScene("MainMenu");
         }
     }
     public void UnSec()

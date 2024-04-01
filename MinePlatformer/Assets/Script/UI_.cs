@@ -9,6 +9,10 @@ public class UI_ : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+    public void LoadSceneName(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
     public static void NextLevel()
     {
         var index = SceneManager.GetActiveScene().buildIndex;
