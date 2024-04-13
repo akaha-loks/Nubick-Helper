@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -42,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
         }
         Move();
         Jump();
-        Death();
         CheckFlip();
         Dash();
         CheckingGround();
@@ -105,13 +103,7 @@ public class PlayerMovement : MonoBehaviour
 
         _lookRight = !_lookRight;
     }
-    private void Death()
-    {
-        if(transform.position.y < -8f)
-        {
-            SceneManager.LoadScene("Restart");
-        }
-    }
+    
     private void Dash()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)

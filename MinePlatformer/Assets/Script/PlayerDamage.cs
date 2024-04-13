@@ -12,12 +12,15 @@ public class PlayerDamage : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip sound;
 
+    public GameObject restart;
+
     private void Update()
     {
         HP = PlayerPrefs.GetFloat("HP");
-        if(HP < 0)
+        if (transform.position.y < -10 || HP < 0)
         {
-            SceneManager.LoadScene("MainMenu");
+            restart.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
     public void UnSec()
