@@ -24,4 +24,8 @@ public class UI_ : MonoBehaviour
         var index = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(index - 1);
     }
+    public void PlayGame()
+    {
+        Time.timeScale = 1;
+    }
 }

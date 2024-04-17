@@ -1401,6 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54dca94b4f9a1314fbd62101131d9d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMainMenu: 0
 --- !u!1 &525156365
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,6 +2018,7 @@ RectTransform:
   - {fileID: 71212561}
   - {fileID: 1328943662}
   - {fileID: 1163396086}
+  - {fileID: 1914478122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -15572,6 +15574,116 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe69a79946422a048b3e900115bfc8c5, type: 3}
+--- !u!1001 &1914478121
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 562658138}
+    m_Modifications:
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708607924851420512, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_Name
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466150137044453542, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 562658139}
+    - target: {fileID: 7466150137044453542, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayGame
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+--- !u!224 &1914478122 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1380024782293005891, guid: d6d6bc76b62dd7241bba31d95c6faf6b, type: 3}
+  m_PrefabInstance: {fileID: 1914478121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1979892186
 GameObject:
   m_ObjectHideFlags: 0
@@ -16109,14 +16221,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 562658139}
         m_TargetAssemblyTypeName: UI_, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 3
+        m_MethodName: LoadSceneName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &8209002248959971026
