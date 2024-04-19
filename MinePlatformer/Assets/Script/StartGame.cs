@@ -13,7 +13,7 @@ public class StartGame : MonoBehaviour
     {
         if (isMainMenu == false)
         {
-            Invoke("GetStartGame", 0.3f);
+            Invoke("GetStartGame", 0.1f);
         }
         else
         {
