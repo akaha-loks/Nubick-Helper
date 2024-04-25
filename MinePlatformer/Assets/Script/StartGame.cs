@@ -5,14 +5,15 @@ using UnityEngine;
 public class StartGame : MonoBehaviour
 {
     public bool isMainMenu = true;
-    private void Start()
-    {
-        PlayerPrefs.SetFloat("HP", 10);
-    }
+    
     private void Awake()
     {
         if (isMainMenu == false)
         {
+            if (PlayerPrefs.GetFloat("HP") < 1)
+            {
+                PlayerPrefs.SetFloat("HP", 1);
+            }
             Invoke("GetStartGame", 0.1f);
         }
         else

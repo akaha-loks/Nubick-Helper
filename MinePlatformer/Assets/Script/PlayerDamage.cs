@@ -17,7 +17,7 @@ public class PlayerDamage : MonoBehaviour
     private void Update()
     {
         HP = PlayerPrefs.GetFloat("HP");
-        if (transform.position.y < -10 || HP < 0)
+        if (transform.position.y < -10 || HP < 1)
         {
             restart.SetActive(true);
             gameObject.SetActive(false);
